@@ -1,7 +1,62 @@
 extends ../_layouts/layout.jade
 
 block title
-    title Article Title
+    title html4you
 
 block content
-    .container Hello, world!
+    .container
+        .header
+            .header__section
+                h1.header-name Конвертор PSD в  HTML
+                h3.header-text Преврати свой PSD файл в HTML код быстро и качественно
+            .btn-up
+                a(href="#").btn-link
+        .about
+            h1.section-name.section-name.section-name_black Что это такое?
+            .about__section
+                .about__section-psd
+                .about__section-text Вы рисуете PSD
+            .about__section
+                .about__section-html
+                .about__section-text Мы создаем web-страницу
+        .services
+            h1.section-name.section-name.section-name_white Что мы делаем?
+            .services__section
+                .services__section-img
+                h4.services__section-name HTML to PSD
+                p.services__section-text Мы конвертируем ваш дизайн в высококачественный HTML5+CSS3 при необходимости с JAVASCRIPT
+            .services__section
+                .services__section-img
+                h4.services__section-name Мобильный/Адаптивный
+                p.services__section-text Ваш сайт будет превосходно смотреться на компьютере или мобильном устройстве
+            .services__section
+                .services__section-img
+                h4.services__section-name CMS
+                p.services__section-text Нужна установка на систему управления сайтом? Нет проблем! Wordpress, Drupal, Joomla!
+            .services__section
+                .services__section-img
+                h4.services__section-name PSD в E-mail рассылку
+                p.services__section-text Дайте нам свой дизайн e-mail рассылки и будте уверены он будет воспроизводится в любом e-mail клиенте.
+        .advantages
+            h1.section-name.section-name.section-name_black Наши Приемущества
+            .advantages__section
+                ul.advantages__list
+                    each text in ['Качественно и быстро!', 'Написание кода на 100% вручную', 'Пожизненное обслуживание клиентов']
+                        li.advantages__list-item=text
+            .advantages__section
+                ul.advantages__list
+                    each text in ['Соблюдение всех web стандартов', 'Оптимизация изображений', 'Маленький размер файла']
+                        li.advantages__list-item=text
+        .feedback
+            h1.section-name.section-name.section-name_white оДИН ШАГ ДО ГОТОВОЙ html СТРАНИЦЫ
+            form(method="post" action="")
+                .input-group
+                    input(type="text" placeholder="Ваше имя")
+                    span.input-group-addon
+                .input-group
+                    input(type="text" placeholder="Ваше имя")
+                    span.input-group-addon
+                .input-group
+                    .upload-psd Загрузите PSD
+                    span.input-group-addon
+                input(type="submit")

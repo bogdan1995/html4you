@@ -1,3 +1,84 @@
 // =======================
 // Layout/Navigation
 // =======================
+
+.nav {
+  display: none;
+  @extend .clearfix;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $nav-color;
+  font-size: 18px;
+}
+
+.nav__list {
+  padding: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .nav {
+    font-size: 12px;
+    display: block;
+    &-logo {
+      display: none;
+    }
+  }
+
+  .nav__list {
+    float: none;
+    margin: auto;
+    &-item {
+      text-align: center;
+      display: inline-block;
+      width: calc(20% - 5px);
+      &:hover span {
+        padding-bottom: 3px;
+        border-bottom: 2px solid white;
+      }
+    }
+    &-link {
+      display: inline-block;
+      line-height: 50px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    font-size: 18px;
+    display: block;
+    &-logo {
+      display: block;
+      float: left;
+      margin: 26px 0 11px 6.25%;
+    }
+  }
+
+  .nav__list {
+    width: auto;
+    float: right;
+    margin-right: 104px;
+    &-item {
+      display: inline-block;
+      margin-left: 36px;
+      &:hover span {
+        padding-bottom: 5px;
+        border-bottom: 3px solid white;
+      }
+    }
+    &-link {
+      display: inline-block;
+      line-height: 106px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .nav__list {
+    margin-right: 15px;
+  }
+}

@@ -2,6 +2,10 @@
 // Base/Base
 // =======================
 
+html, body, .wrapper, .container {
+  height: 100%;
+}
+
 body {
     font-family: $main-font;
     font-weight: 300;
@@ -12,10 +16,6 @@ body {
 a {
     color: $color-link;
     text-decoration: none;
-
-    &:hover {
-        color: $color-link-hover;
-    }
 }
 
 hr {
@@ -25,4 +25,19 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+.container {
+  margin-top: 0;
+}
+
+@media only screen
+and (min-width: 1200px) {
+  .container {
+    margin-top: 106px;
+  }
 }
