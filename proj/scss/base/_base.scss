@@ -27,17 +27,48 @@ hr {
     padding: 0;
 }
 
-ul {
+ul, h1, h2, h3, h4, h5, h6 {
   margin: 0;
+}
+
+li {
+  list-style: none;
 }
 
 .container {
   margin-top: 0;
 }
 
-@media only screen
-and (min-width: 1200px) {
-  .container {
-    margin-top: 106px;
+.header {
+  height: 100%;
+}
+
+.section-name {
+  text-transform: uppercase;
+  font-size: 18px;
+  text-align: center;
+  &_white {
+    color: white;
+  }
+  &_black {
+    color: black;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section-name {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .section{
+    width:1170px;
+    margin: 0 auto;
+    padding: 0 15px;
+    &-name {
+      padding: 51px 0;
+      font-size: 54px;
+    }
   }
 }

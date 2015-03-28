@@ -1,0 +1,35 @@
+// =======================
+// Layout/Header
+// =======================
+
+.about__section {
+  width: 50%;
+  float: left;
+  text-align: center;
+  &-psd {
+    position: relative;
+    background: url('/img/psd.png');
+    width: 543px;
+    &:before {
+      @extend %arrow;
+      content: '';
+      position: absolute;
+      top:0;
+      right: -33.5px;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+  &-html {
+    background: url('/img/html.png');
+    width: 439px;
+  }
+  &-html, &-psd {
+    margin: auto;
+    height: 283px;
+    margin-bottom: 20px;
+  }
+  &-text {
+    text-align: center;
+  }
+}
