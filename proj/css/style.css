@@ -2,20 +2,21 @@
 /* Font variables */
 /* Color variables */
 /* Clearfix */
-.clearfix:before, .nav:before,
+.clearfix:before, .nav:before, .about:before,
 .clearfix:after,
-.nav:after {
+.nav:after,
+.about:after {
   content: " ";
   /* 1 */
   display: table;
   /* 2 */
 }
 
-.clearfix:after, .nav:after {
+.clearfix:after, .nav:after, .about:after {
   clear: both;
 }
 
-.clearfix, .nav {
+.clearfix, .nav, .about {
   *zoom: 1;
 }
 
@@ -448,8 +449,9 @@ hr {
   padding: 0;
 }
 
-ul, h1, h2, h3, h4, h5, h6 {
+ul, h1, h2, h3, h4, h5, h6, p {
   margin: 0;
+  padding: 0;
 }
 
 li {
@@ -476,8 +478,13 @@ li {
   color: black;
 }
 
+.section-name {
+  padding: 18px 0;
+}
+
 @media only screen and (min-width: 768px) {
   .section-name {
+    padding: 36px 0;
     font-size: 36px;
   }
 }
@@ -641,6 +648,10 @@ li {
     margin-right: 15px;
   }
 }
+.about {
+  margin-bottom: 100px;
+}
+
 .about__section {
   width: 50%;
   float: left;
@@ -672,8 +683,68 @@ li {
   text-align: center;
 }
 
+.about__section-text {
+  font-size: 24px;
+}
+
+.services {
+  background: #00aeef;
+}
+
+.services__section__list {
+  padding-bottom: 107px;
+}
+
+.services__section {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  width: 250px;
+  margin-right: 19px;
+  background: #fff;
+  vertical-align: top;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  min-height: 270px;
+}
+
+.services__section-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.services__wrapper {
+  height: 79px;
+  position: relative;
+  margin: 22px auto 37px;
+}
+
+.services__section-paragraph {
+  font-size: 14px;
+}
+
+.services__section-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .services__section__list {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .services__section {
+    margin-bottom: 10px;
+  }
+}
 /* Modules */
-.about__section-psd:before, .btn-up {
+.about__section-psd:before, .btn-up, .services__section-img_responsive, .services__section-img_email, .services__section-img_browser, .services__section-img_cms {
   background: url(/img/sprites.png) no-repeat;
 }
 
@@ -687,4 +758,28 @@ li {
   background-position: -354px -6px;
   width: 138px;
   height: 138px;
+}
+
+.services__section-img_responsive {
+  background-position: -223px 0;
+  width: 65px;
+  height: 79px;
+}
+
+.services__section-img_email {
+  background-position: -140px 0;
+  width: 54px;
+  height: 38px;
+}
+
+.services__section-img_browser {
+  background-position: -54px -70px;
+  width: 168px;
+  height: 47px;
+}
+
+.services__section-img_cms {
+  background-position: 0 -70px;
+  width: 54px;
+  height: 54px;
 }

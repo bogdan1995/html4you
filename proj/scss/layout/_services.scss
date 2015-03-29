@@ -1,0 +1,70 @@
+// =======================
+// Layout/Services
+// =======================
+
+.services {
+  background: $services-color;
+}
+
+.services__section__list {
+  padding-bottom: 107px;
+}
+
+.services__section {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  width: 250px;
+  margin-right: 19px;
+  background: #fff;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 5px;
+  min-height: 270px;
+}
+
+.services__section-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  &_browser {
+    @extend %browser;
+  }
+  &_responsive {
+    @extend %iphone;
+  }
+  &_cms {
+    @extend %settings;
+  }
+  &_email {
+    @extend %email;
+  }
+}
+
+.services__wrapper {
+  height: 79px;
+  position: relative;
+  margin: 22px auto 37px;
+}
+
+.services__section-paragraph {
+  font-size: 14px;
+}
+
+.services__section-name {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1199px) {
+  .services__section__list {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .services__section {
+    margin-bottom: 10px;
+  }
+}
