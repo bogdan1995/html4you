@@ -1,5 +1,8 @@
-<h2>Front-end template created by Bogdan Ponomarenko</h2> 
-<h3>Project structure:</h1><br>
+Front-end template created by Bogdan Ponomarenko
+================================================
+Project structure:
+------------------
+
 
 ```
 ├── .bowerrc        # settings for bower
@@ -26,10 +29,10 @@
     ├── tools/      # variables, mixins, functions and e.t.c.
     style.scss        # main scss file
 ```
-<h3>How it works?</h3>
-<ol>
-    <li>Download project</li>
-    <li>In your console write "npm install" and "bower install"</li>
-    <li>Start "default" task in gulp</li>
-    <li>Enjoy! :)</li>
-</ol>
+How it works?
+-------------
+
+* Download project
+* In your console write "npm install" and "bower install"
+* Start "default" task in gulp
+* Enjoy! :)
