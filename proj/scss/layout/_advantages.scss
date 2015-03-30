@@ -1,0 +1,52 @@
+// =======================
+// Layout/Advantages
+// =======================
+
+.advantages {
+  @extend .clearfix;
+  margin-bottom: 10px;
+}
+
+.advantages__section {
+  width: 50%;
+  float: left;
+}
+
+.advantages__list {
+  margin: auto;
+  width: 442px;
+}
+
+.advantages__list-item {
+  font-size: 20px;
+  position: relative;
+  margin-bottom: 85px;
+  padding-left: 66px;
+  font-family: 'solomon_sans_semiboldregular' , Arial, serif;
+  &:before {
+    @extend %check;
+    content: '';
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .advantages__section {
+    width: 100%;
+    text-align: center;
+  }
+  .advantages__list-item {
+    font-size: 16px;
+    padding-left: 0;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .advantages__list-item {
+    font-size: 12px;
+  }
+}

@@ -62,14 +62,18 @@ block content
         .feedback
             .section
                 h1.section-name.section-name.section-name_white оДИН ШАГ ДО ГОТОВОЙ html СТРАНИЦЫ
-                form(method="post" action="")
-                    .input-group
-                        input(type="text" placeholder="Ваше имя")
-                        span.input-group-addon
-                    .input-group
-                        input(type="text" placeholder="Ваше имя")
-                        span.input-group-addon
-                    .input-group
-                        .upload-psd Загрузите PSD
-                        span.input-group-addon
-                    input(type="submit")
+                .feedback__form
+                    form(method="post" action="")
+                        .input-group
+                            input(type="text" placeholder="Ваше имя" required)
+                            span.input-group-addon.input-group-addon_people
+                        .input-group
+                            input(type="email" placeholder="Ваш email")
+                            span.input-group-addon.input-group-addon_email
+                        .input-group
+                            .upload-psd Загрузите PSD
+                            span.input-group-addon.input-group-addon_cloud
+                            input(type="file" name="upload")
+                        .submit
+                            input(type="submit")
+        include ../_blocks/footer.jade

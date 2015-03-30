@@ -52,11 +52,19 @@
 
 .services__section-paragraph {
   font-size: 14px;
+  font-family: 'solomon_sans_bookregular' , Arial, serif;
 }
 
 .services__section-name {
   font-size: 20px;
   margin-bottom: 10px;
+  font-family: 'solomon_sans_semiboldregular' , Arial, serif;
+}
+
+@media only screen and (max-width: 480px) {
+  .services__section {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 1199px) {

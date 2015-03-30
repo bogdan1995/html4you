@@ -1,0 +1,90 @@
+// =======================
+// Layout/Index
+// =======================
+
+@import "compass/css3/user-interface";
+
+.feedback {
+  background: $nav-color;
+  padding-bottom: 95px;
+  font-family: 'solomon_sans_bookregular' , Arial, serif;
+}
+
+.feedback__form {
+  width: 462px;
+  margin: auto;
+}
+
+.input-group {
+  position: relative;
+  background: #fff;
+  display: table;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  input {
+    border: none;
+    display: table-cell;
+    width: 100%;
+    font-size: 14px;
+    padding: 23px 15px;
+    color: $input-color;
+    @include input-placeholder {
+      color: $input-color;
+    }
+  }
+  input[type="file"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  &-addon {
+    position: relative;
+    display: table-cell;
+    width: 40px;
+    &:before {
+      content: '';
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      margin: auto;
+    }
+    &_people:before {
+      @extend %people;
+    }
+    &_email:before {
+      @extend %dog;
+    }
+    &_cloud:before {
+      @extend %cloud;
+    }
+  }
+}
+
+.upload-psd {
+  line-height: 62px;
+  margin-left: 15px;
+  color: $input-color;
+}
+
+.submit {
+  margin-top: 60px;
+  text-align: center;
+}
+
+input[type="submit"] {
+  font-size: 20px;
+  color: #fff;
+  background: #db5941;
+  text-transform: uppercase;
+  padding: 21px 15px;
+  border: none;
+  border-radius: 10px;
+}

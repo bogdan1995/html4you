@@ -2,3 +2,64 @@
 // Layout/Footer
 // =======================
 
+.footer {
+  @extend .clearfix;
+  background: $footer-color;
+  color: #fff;
+  font-family: 'source_sans_proregular', Arial, serif;
+  font-size: 18px;
+  &-copy {
+    line-height: 101px;
+    float: left;
+  }
+}
+
+.footer__icons {
+  display: table;
+  float: right;
+  height: 101px;
+
+}
+
+.footer__icons-item {
+  vertical-align: middle;
+  display: table-cell;
+  padding-right: 10px;
+  a {
+    display: block;
+  }
+
+}
+
+.fb {
+  @extend %fb;
+}
+
+.tw {
+  @extend %tw;
+}
+
+.youtube {
+  @extend %youtube;
+}
+
+.dribble {
+  @extend %dribble;
+}
+
+.behance {
+  @extend %behance;
+}
+
+.deviantart {
+  @extend %deviantart;
+}
+
+.instagram {
+  @extend %instagram;
+}
+
+.linkedin {
+  @extend %linkedin;
+}
+

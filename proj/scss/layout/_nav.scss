@@ -11,10 +11,14 @@
   background: $nav-color;
   font-size: 18px;
   text-align: center;
+  font-family: 'code_pro_boldregular', Arial, serif;
 }
 
 .nav__list {
   padding: 0;
+  &-item span {
+    transition: all .3s ease-in-out;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -42,10 +46,13 @@
       text-align: center;
       display: inline-block;
       width: calc(20% - 5px);
-      &:hover span {
-        padding-bottom: 3px;
-        border-bottom: 2px solid white;
+      span {
+        &:hover {
+          padding-bottom: 3px;
+          border-bottom: 2px solid white;
+        }
       }
+
     }
     &-link {
       display: inline-block;
