@@ -2,29 +2,29 @@
 <h3>Project structure:</h1><br>
 
 ```
-|_ .bowerrc - settings for bower
-|_ bower.json - config for bower
-|_ .gitignore - untracked files and folders
-|_ package.json - config for npm
-|_ gulpfile.js - config for gulp
-|_ proj/ - project source files
-|_ css/ - stylesheets
-|_ fonts/ - fonts
-|_ img/ - images
-|_ jade/ - jade files
-    |_ blocks/ - repeating blocks
-    |_ layouts/ - templates 
-    |_ pages/ - page layout
-|_ js/ - javascript files
-    |_ vendor/ - javascript plugins
-    main.js - your js code
-|_ php/ - php files
-|_ scss/ - SASS files (SMACSS)
-    |_ base/ - basic stylesheet (reset, normalize and e.t.c)
-    |_ layouts/ - blocks stylesheet
-    |_ modules/ - elements stylesheet
-    |_ tools/ - variables, mixins, functions and e.t.c.
-    style.scss - main scss file
+├── .bowerrc        # settings for bower
+├── bower.json      # config for bower
+├── .gitignore      # untracked files and folders
+├── package.json    # config for npm
+├── gulpfile.js     # config for gulp
+├── proj/           # project source files
+├── css/            # stylesheets
+├── fonts/          # fonts
+├── img/            # images
+├── jade/           # jade files
+    ├── blocks/     # repeating blocks
+    ├── layouts/    # templates 
+    ├── pages/      # page layout
+├── js/             # javascript files
+    ├── vendor/     # javascript plugins
+    main.js           # your js code
+├── php/            # php files
+├── scss/           # SASS files (SMACSS)
+    ├── base/       # basic stylesheet (reset, normalize and e.t.c)
+    ├── layouts/    # blocks stylesheet
+    ├── modules/    # elements stylesheet
+    ├── tools/      # variables, mixins, functions and e.t.c.
+    style.scss        # main scss file
 ```
 <h3>How it works?</h3>
 <ol>
