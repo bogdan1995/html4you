@@ -4,25 +4,26 @@
 
 .about {
   @extend .clearfix;
-  margin-bottom: 100px;
+  margin-bottom: -50px;
 }
 
 .about__section {
-  width: 50%;
-  float: left;
+  width: 100%;
   text-align: center;
+  margin-bottom: 100px;
+  position: relative;
   &-psd {
-    position: relative;
     background: url('/img/psd.png');
     width: 543px;
     &:before {
       @extend %arrow;
       content: '';
       position: absolute;
-      top:0;
-      right: -33.5px;
-      bottom: 0;
+      right: 0;
+      left: 0;
+      bottom: -77px;
       margin: auto;
+      transform: rotate(90deg);
     }
   }
   &-html {
@@ -42,4 +43,24 @@
 .about__section-text {
   font-size: 24px;
   font-family: 'solomon_sans_bookregular', Arial, serif;
+}
+
+@media only screen and (min-width: 1200px) {
+  .about {
+    margin-bottom: 77px;
+  }
+  .about__section {
+    width: 50%;
+    float: left;
+    margin-bottom: 0;
+    &-psd{
+      &:before {
+        top:0;
+        right: -100%;
+        bottom: 0;
+        margin: auto;
+        transform: none;
+      }
+    }
+  }
 }

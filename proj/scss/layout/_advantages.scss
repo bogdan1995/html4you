@@ -48,5 +48,10 @@
 @media only screen and (max-width: 350px) {
   .advantages__list-item {
     font-size: 12px;
+    padding-left: 66px;
+  }
+  .advantages__list {
+    margin: auto;
+    width: 100%;
   }
 }

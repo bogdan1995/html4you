@@ -6,13 +6,14 @@ block title
 block content
     .container
         .header
-            .header__section
-                h1.header-name Конвертор PSD в  HTML
-                h3.header-text Преврати свой PSD файл в HTML код быстро и качественно
-            .btn-up
-                a(href="#").btn-link
+            .section(data-section="header")
+                .header__section
+                    h1.header-name Конвертор PSD в  HTML
+                    h3.header-text Преврати свой PSD файл в HTML код быстро и качественно
+                .btn-up
+                    a(href="#").btn-link
         .about
-            .section
+            .section(data-section="about")
                 h1.section-name.section-name.section-name_black Что это такое?
                 .about__section
                     .about__section-psd
@@ -21,7 +22,7 @@ block content
                     .about__section-html
                     .about__section-text Мы создаем web-страницу
         .services
-            .section
+            .section(data-section="services")
                 h1.section-name.section-name.section-name_white Что мы делаем?
                 ul.services__section__list
                     li.services__section
@@ -49,7 +50,7 @@ block content
                             h4.services__section-name PSD в E-mail рассылку
                             p.services__section-paragraph Дайте нам свой дизайн e-mail рассылки и будте уверены он будет воспроизводится в любом e-mail клиенте.
         .advantages
-            .section
+            .section(data-section="advantages")
                 h1.section-name.section-name.section-name_black Наши Приемущества
                 .advantages__section
                     ul.advantages__list
@@ -60,7 +61,7 @@ block content
                         each text in ['Соблюдение всех web стандартов', 'Оптимизация изображений', 'Маленький размер файла']
                             li.advantages__list-item=text
         .feedback
-            .section
+            .section(data-section="feedback")
                 h1.section-name.section-name.section-name_white оДИН ШАГ ДО ГОТОВОЙ html СТРАНИЦЫ
                 .feedback__form
                     form(method="post" action="")
@@ -76,4 +77,7 @@ block content
                             input(type="file" name="upload")
                         .submit
                             input(type="submit")
+        .showmenu
+            a(href="#")
+                span.showmenu-line
         include ../_blocks/footer.jade

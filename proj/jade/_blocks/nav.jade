@@ -3,8 +3,19 @@
         a(href="#")
             img(src="/img/logo.png")
     ul.nav__list
-        each item in ['ГЛАВНАЯ', 'ЧТО ЭТО ТАКОЕ?', 'ЧТО МЫ ДЕЛАЕМ?', 'НАШИ ПРИЕМУЩЕСТВА', 'ЗАГРУЗКА PSD']
-            li.nav__list-item
-                a(href="#").nav__list-link
-                    span=item
+        li.nav__list-item
+            a(href="#" id="header").nav__list-link
+                span ГЛАВНАЯ
+        li.nav__list-item
+            a(href="#" id="about").nav__list-link
+                span ЧТО ЭТО ТАКОЕ?
+        li.nav__list-item
+            a(href="#" id="services").nav__list-link
+                span ЧТО МЫ ДЕЛАЕМ?
+        li.nav__list-item
+            a(href="#" id="advantages").nav__list-link
+                span НАШИ ПРИЕМУЩЕСТВА
+        li.nav__list-item
+            a(href="#" id="feedback").nav__list-link
+                span ЗАГРУЗКА PSD
 

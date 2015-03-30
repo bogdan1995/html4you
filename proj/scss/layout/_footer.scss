@@ -63,3 +63,21 @@
   @extend %linkedin;
 }
 
+@media only screen and (max-width: 768px) {
+  .footer-copy, .footer__icons {
+    float: none;
+  }
+  .footer-copy {
+    text-align: center;
+  }
+  .footer__icons {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .footer__icons-item {
+    padding-right: 5px;
+  }
+}
+
